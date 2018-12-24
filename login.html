@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Questioner | Login </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+<link rel="stylesheet" type="text/css" href="css/font.css" />
+</head>
+<body>
+ <header class="header-page" id="header">
+	  <div class="questioner-header" id="questioner">
+	  	<h1><span>Qu</span>estioner</h1>
+	  </div>
+	  <div class="questioner-header" id="questioner2">
+        <nav class="nav-bar" id="nav">
+       	  <ul>
+       		<li ><a href="index.html" >Home</a></li>
+       		<li ><a href="siginup.html">Signup</a></li>
+       		<li class="target"><a href="login.html">Login</a></li>
+			<li><a href="#work">Get Stated</a></li>
+			</ul>
+        </nav>
+        <span class="slideshow"  onclick="openNav()">&#9776;</span>
+        
+		</div>
+
+      <!---- mobile menu---->
+        <div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index.html">Home</a>
+		  <a href="siginup.html">Signup</a>
+		  <a href="login.html">Login</a>
+		  <a href="#work">Get Stated</a>
+	  </div>	
+</header>
+  <div class="content d-flex justify-content-center align-items-center">
+      <div class="auth">
+        <div class="card d-flex justify-content-center">
+          <div class="w-90">
+           <div class="imgcontainer">
+         <img src="images/avatar.jpg" alt="Avatar" class="avatar" />
+       </div>
+            <p class="f-36 text-center text-blue">Log In</p>
+            <form class="">
+              <div class="input-div d-flex justify-content-center">
+                <input type="email" name="email" id="email" value="" placeholder="Email Address" class="w-100" required>
+              </div>
+              <div class="input-div d-flex justify-content-center">
+                <input type="password" name="password" id="password" value="" placeholder="Password" class="w-100" required>
+              </div>
+              <div class="input-div d-flex justify-content-center">
+                <a type="button" name="button" class="btn btn-blue w-100 d-flex justify-content-center align-items-center" href="./dashboard/userdashbbord/index.html">
+                  Log In
+				  </a>
+              </div>
+              <p class="text-center f-15 text-grey">Dont have an account? <span><a href="siginup.html">Sign Up</a></span> </p>
+              <p class="text-center f-13 text-grey">Forgot Password? <span><a href="forget.html">Click here</a></span> </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+ <footer class="footer">
+  <div class="footer-container">
+    <div><span>Qu</span>estioner</div>
+  	<p>All rights reserved © 2018</p>
+  </div>
+</footer>
+<script src="js/basic.js"></script>    
+</body>
+</html>
