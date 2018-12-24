@@ -1,0 +1,293 @@
+/* CSS Document */
+/*--------------------------------------------------*/
+div.header{
+	position: fixed;
+	z-index: 9;
+	left: 0px;
+	top: 0px;
+	overflow: auto;
+	background-color: white;
+	width: 100%;
+	height: 50px;
+	border-bottom: 2px solid silver;
+}
+
+div.header div.left{
+	color: blue;
+	float: left;
+	padding: 15px 0px 0px 90px;
+}
+
+div.header form{
+	float: right;
+}
+
+div.header form input{
+	padding: 10px 5px;
+	margin-top: 6px;
+	border: 1px solid blue;
+	color: blue;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+div.header form button{
+	text-transform: uppercase;
+	padding: 10px 5px;
+	background-color: blue;
+	color: white;
+	border: 1px solid blue;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+div.header div.right{
+	float: right;
+}
+
+div.header div.right ul{
+	list-style: none;
+	margin: 17px 90px 0px 0px;
+	padding-left: 0px;
+}
+
+div.header div.right ul li{
+	display: inline;
+	margin-left: 15px;
+	padding: 5px 5px 15px 5px;
+}
+
+div.header div.right ul li.active, div.header div.right ul li.active:hover{
+	border-bottom: 5px solid blue;
+	padding-bottom: 10px;
+}
+
+div.header div.right ul li a, div.header div.right ul li a:active, div.header div.right ul li a:hover{
+	color: blue;
+	text-decoration: none;
+}
+
+div.content{
+	background-color: #E7E8ED;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+div.content div.info{
+	padding-top: 50px;
+	width: 80%;
+}
+
+div.content div.info img{
+	position: fixed;
+	width: 88.7%;
+	margin-left: 5%;
+	height: 50%;
+}
+
+div.content div.info .content-infomation{
+	position: absolute;
+	margin-top: 13%;
+	background-color: white;
+	border: 1px solid silver;
+	z-index: 8;
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 30px;
+	overflow: auto;
+	padding: 15px;
+}
+.ans p{
+	margin-bottom:7px;
+	font-weight: 500;
+}
+
+div.content-infomation div.left-side{
+	float: left;
+	/*background-color: red;*/
+	width: 70%;
+}
+
+div.content-infomation div.left-side h2{
+	margin: 0px 0px 7px 0px;
+}
+
+div.content-infomation div.left-side form input{
+	width: 97%;
+	padding: 10px 5px;
+	border-radius: 5px;
+	border: 1px solid blue;
+	margin-bottom: 15px;
+}
+
+div.content-infomation div.left-side form textarea{
+	width: 97%;
+	border-radius: 5px;
+	height: 200px;
+	padding: 10px 5px;
+	border: 1px solid blue;
+}
+
+div.content-infomation div.left-side form button{
+	margin-top: 10px;
+	padding: 8px 10px;
+	border-radius: 10px;
+	border: 1px solid blue;
+	background-color: blue;
+	color: white;
+	margin-bottom: 10px;
+}
+
+div.content-infomation div.left-side div.question{
+	width: 99%;
+	padding: 10px;
+}
+
+div.content-infomation div.left-side div.question a{
+	text-decoration: none;
+	color: black;
+}
+
+div.content-infomation div.left-side div.question a:hover{
+	text-decoration: none;
+	color: blue;
+}
+
+div.qns{
+	margin-bottom:15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid silver;
+	padding-right: 15px;
+}
+
+div.qns p{
+	margin: 0px 0px;
+	font-weight: normal;
+}
+
+div.qns h3{
+	margin: 10px 0px;
+}
+
+div.content-infomation div.right-side{
+	float: right;
+	width: 30%;
+}
+
+div.content-infomation div.right-side h4{
+	text-transform: uppercase;
+	margin-left: 17px;
+}
+
+div.content-infomation div.right-side .qns-cont .cont{
+	width: 100%;
+	overflow: auto;
+	margin-bottom: 15px;
+}
+
+div.content-infomation div.right-side .qns-cont .cont img{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	float: left;
+}
+
+div.content-infomation div.right-side .qns-cont .cont p{
+	font-weight: normal;
+	float: left;
+	width: 290px;
+	margin: 0px 0px 0px 5px;
+}
+
+h2.ans-title{
+	text-transform: uppercase;
+}
+
+div.answer-container{
+	background-color: #efefef;
+	padding: 15px;
+}
+
+div.answer-container div.ans{
+	padding: 10px;
+	border-bottom: 1px solid silver;
+}
+
+div.answer-container div.ans h3{
+	margin: 0px 0px 0px 0px;
+}
+
+div.answer-container div.ans p{
+	font-weight: normal;
+	margin-top: 0px;
+}
+
+@media (min-width: 360px) and (max-width:640px){
+	div.header{
+		overflow: auto;
+	}
+
+	div.header div.left{
+		float: left;
+		padding-left: 0px;
+		font-size: 10px;
+	}
+
+	div.header div.right{
+		float: right;
+		width: 230px;
+		font-size: 10px;
+	}
+
+	div.header div.right ul{
+		margin:0px;
+		padding-top: 15px;
+	}
+
+	div.header div.right ul li{
+		margin-left: 3px;
+	}
+
+	div.header form{
+		display: none;
+	}
+
+	div.content-infomation div.left-side {
+		width: 100%;
+	}
+
+	div.content-infomation div.left-side form input{
+		width: 90%;
+	}
+	
+	div.content-infomation div.left-side form textarea{
+		width: 90%;
+	}
+	div.content-infomation div.left-side h2 {
+		font-size: 15px;
+	}
+
+	div.qns p {
+		font-size: 10px;
+	}
+
+	div.content-infomation div.right-side{
+		width: 100%;
+	}
+
+	div.content-infomation div.right-side .qns-cont .cont p {
+		width: 197px;
+		font-size: 15px;
+	}
+}
+@media screen and (max-width:717px){
+	div.content div.info img{
+	width: 89.7%;
+	
+}
+
+}
