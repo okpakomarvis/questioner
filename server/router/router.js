@@ -1,0 +1,13 @@
+import express from "express";
+import user from "../controller/users";
+import upload from "../middleware/fileupload";
+const router = express.Router();
+router.get("/meetups", user.getMeetup);
+router.post("/meetups", upload.single("imagePath"), user.createMeetup);
+router.get("/meetups/:meetup_id", user.singleMeetup); 
+router.get("/meetup/upcoming/", user.upcomingMeetup);
+router.post("/questions", user.createQuestion);
+router.patch("/questions/:question_id/upvote", user.upvote);
+router.patch("/questions/:question_id/downvote", user.downVote);
+router.post("/meetups/:meetup_id/rsvp", user.createRvsp); 
+export default router;
