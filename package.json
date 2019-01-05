@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel server -d build --watch",
     "start": "nodemon build/app.js",
-    "test": " mocha build/test/  --timeout 10000"
+    "test": " mocha build/test/  --timeout 10000 --exit"
   },
   "keywords": [
     "api"
