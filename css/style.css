@@ -9,7 +9,7 @@
 }
 body {
 	font-family: Helvetica, Arial," sans-serif";
-	background-color:#3f596d; 
+	background-color:#A3D4FC; 
 }
 .container{
 	max-width: 1300px;
@@ -21,7 +21,7 @@ body {
 	max-height: 60px;
 	padding: 5px;
 	position: relative;
-	background-color: #048AF8;
+	background-color: #319FF9;
 	overflow: hidden;
 	border: 1px groove #304F68;
 	border-bottom-right-radius: 4px;
@@ -125,12 +125,12 @@ text-decoration: none;
 	margin-left:auto;
 	margin-right:auto;
 	text-align: center;
-	padding:15px 5px 10px 5px;
+	padding:15px 5px 5px 5px;
 		
 }
 .container-wrapup{
 	max-height: 150px;
-	padding-bottom: 13px;
+	padding-bottom: 23px;
 	
 }
 .container-wrapup h2{
@@ -174,10 +174,10 @@ text-decoration: none;
 	padding: 18px;
 }
 .container-arran:nth-child(even){
-	background-color:#B7CFD5;
+	background-color:#319FF9;
 }
 .container-arran:nth-child(odd){
-	background-color:#81DDF4;
+	background-color:#03589E;
 }
 .container-arran p{
 	padding:6px 5px 5px 2px;
@@ -199,7 +199,7 @@ text-decoration: none;
 	padding-top: 25px;
 	padding-bottom: 20px;
 	margin-bottom: 0px;
-	background-color: #81DDF4;
+	background-color: #03589E;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
@@ -396,3 +396,82 @@ text-decoration: none;
 .scrolling-box{
   scroll-behavior: smooth;
 }
+/* Style the search field */
+form.example input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 80%;
+	background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example a {
+	float: left;
+	width: 20%;
+	padding: 10px;
+	background: #2196F3;
+	color: white;
+	font-size: 17px;
+	border-left: none; /* Prevent double borders */
+	cursor: pointer;
+  }
+  
+  form.example a:hover {
+	background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+ .upcoming-mt{
+	 text-align:center;
+	 font-size: 30px;
+	 font-weight: 500;
+	 color:#ffffff;
+	 font-style: italic;
+	 
+ }
+ #section-image{
+	 margin:2px;
+	 padding:0px;
+	 width:100%;
+	 height: 200px;
+ }
+ .back-image{
+	 background:url(../images/Meetups-Sydney-Startups.jpg);
+	 background-repeat: no-repeat;
+	 width: 100%;
+	 height: 100%;
+	 background-size: cover;
+ }
+ #top-pt{
+		padding-top:0px;
+ }
+ .back-image h2{
+	 text-align: center;
+	 font-style: italic;
+	 font-size: 28px;
+	 font-weight: 600;
+	 color:#ffffff;
+	 padding-top:20px;
+ }
+ .bantp-tst{
+	 text-align: center;
+	 color:#f6fafc;
+	 margin-top:20px;
+	 font-weight:700;
+	 font-size: 21px;
+ }
+ .back-image p{
+	 width:50%;
+	 text-align: center;
+	 margin-top: 6px;
+	 margin-left:auto;
+	 margin-right: auto;
+	 color: #F9F4F4;
+ }

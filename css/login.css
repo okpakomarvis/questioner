@@ -504,7 +504,7 @@ input:focus {
 .question-count {
   position: absolute;
   right: 10px;
-  top: 10px;
+  bottom: 10px;
   background-color: #fff;
   padding: 7px 15px;
   border-radius: 3px;
@@ -790,4 +790,241 @@ margin-bottom: 20px;
 }
 
 	
+
+/*** start ***/
+
+.question-row {
+	border-bottom: 1px solid lightgray;
+	padding: 5px;
+}
+.logo-type {
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	font-size: 4em;
+}
+.wi-font {
+	font-family: 'Josefin Sans', sans-serif;
+}
+.wired-type {
+	color:darkslategray;
+}
+.ivy-type {
+	font-weight:bold;
+	color:green;
+}
+.wi-green-background {
+	background-color: green;
+}
+.wi-lightgreen-background {
+	background-color: lightgreen;
+}
+.question {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 10px;
+	border-top: 1px solid green;
+	border-bottom: 1px solid green;
+	/* margin: 40px 0px; */
+}
+.q-text {
+	padding-bottom: 10px;
+}
+.answer {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2em;
+	padding: 10px 30px;
+	border-bottom: 1px solid lightgreen;
+	/* margin: 40px 0px; */
+
+}
+
+.question-row {
+	border-bottom: 1px solid lightgray;
+	padding: 5px;
+}
+.logo-type {
+	font-weight:bold;
+	font-size: 4em;
+}
+
+.pb-container {
+	padding-right: 0px;
+	min-height:800px;
+	margin-top:60px;
+}
+.mail-container {
+	background: white;
+	min-height: 600px;
+}
+.mail-notify-row {
+	height: 74px;
+	color: white;
+	background-color: #ff3333; /* PB Dark Red */
+}
+.mail-notify-headline {
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 72px;
+}
+.mail-tools-row {
+	/* height: 74px; */
+}
+.mail-row {
+	border-top: 1px solid darkgreen; /* PB Blue */
+	height: 130px;
+	overflow: hidden;
+	/* letter-spacing: -1px; */
+	margin-bottom: 1px;
+}
+.mail-col-check {
+	width: 3%;
+	float: left;
+}
+.selected-bar {
+	background: #270056;
+	width:12px;
+	height:200px;
+}
+.mail-col-avatar {
+	width: 20%
+	max-width: 88px;
+	padding: 10px;
+	float: left;
+	margin-top: 12px;
+}
+.mail-col-info {
+	width: 80%;
+	float: left;
+	margin-top: 14px;
+}
+.mail-info-time {
+	font-size: 15px;
+	color: #999999;
+	margin-bottom: 7px;
+}
+.mail-info-name1 {
+	font-size: 22px;
+	color: black;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.mail-info-name2 {
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.mail-info-subject {
+	font-size: 19px;
+	color: #999999;
+}
+
+.mail-col-icons {
+	float: right;
+	padding: 5px;
+}
+.mail-col-icons img {
+	float: left;
+}
+
+
+
+.rounded-icon {
+	width:58px;
+	height:58px;
+	border-radius:29px;
+
+}
+
+@media screen and (max-width:600px) {
+  	.mail-col-info {
+		width: 73%;
+	}
+
+  	.mail-info-time {
+  		display:none;
+  	}
+}
+@media screen and (max-width:400px) {
+  	.mail-col-info {
+		width: 90%;
+		margin-top: 4px;
+	}
+  	.mail-col-avatar {
+  		display:none;
+  	}
+}
+
+.avatar-image {
+	width:58px !important;
+	height:58px !important;
+	border-radius: 50%;
+}
+.avatar-initial {
+	font-family: 'Pacifico', cursive;
+	position: absolute;
+	top: 24px;
+	left: 22px;
+	font-size: 20px;
+}
+.avatar-image-medium {
+	width:48px !important;
+	height:48px !important;
+	border-radius: 50%;
+}
+
+.avatar-image-small {
+	width:36px !important;
+	height:36px !important;
+	border-radius: 50%;
+}
+.avatar-image-large {
+	width:97px;
+	height:97px;
+	border-radius: 50%;
+}
+
+/** like button**/
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+.label-bt{
+  float:left;
+  display: inline-block;
+}
+.image-like{
+  padding-top:8px;
+  float: right;
+}
+.ask-quest{
+  position: fixed;
+  z-index: 1;
+  font-size: 32px;
+  top:100px;
+  left:40%;
+  right: 40%;
+  color:darkgreen;
+  font-weight: 750;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
