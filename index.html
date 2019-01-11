@@ -5,6 +5,7 @@
 <title>Questioner | Welcome Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./css/login.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 
@@ -39,8 +40,13 @@
 	  <div class="image-container">
        <img src="images/image-banner.jpg"  alt="banner"/>
 	    <div class="image-banner">
-		  <h2>Home for Questions and Meetup</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>	
+		  <h2>Search for Meetups</h2>
+				<p style="padding-top:5px;padding-bottom: 5px;">
+					<form class="example" action="">
+					<input type="text" placeholder="Search.." name="search">
+					<a href="login.html"><i class = "fa fa-search"></i></a>
+				</form>
+				</p>	
 		</div>
       </div>
       <div class="container-work" id="work">
@@ -67,11 +73,93 @@
       </div>
 	</div>
    <div class="clearfix"></div>
-    </main>
+		</main>
+		<div class="upcoming-mt">Upcoming Meetups</div>
+		<div class="row all-meetups">
+			<div class="col-sm-12 col-md-6 col-lg-4 container" style="width:30%">
+				<a href="login.html">
+        <div class="meetup-card">
+          <aside class="display">
+              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(./images/conference1.jpg);"></div>
+          </aside>
+          <main class="info">
+            <div class="date-thumbnail">
+              <p class="month">FEB</p>
+              <p class="day grey-color">20</p>
+            </div>
+            <div class="details row flex-1">
+              <h3 class="title">
+                <a href="">
+                  International Produced Water (IPWCEA), 2019
+                </a>
+              </h3>
+              <div class="more grey-color">
+                <p class="detail-text" name="date">Tue, 22 - Thu, 24, 10:00am</p>
+                <p class="detail-text" name="venue">Ikoyi, Lagos, Nigeria</p>
+              </div>
+            </div>
+          </main>
+				</div>
+				</a>
+      </div>
+			<div class="col-sm-12 col-md-6 col-lg-4 container" style="width:30%;">
+				<a href="login.html">
+        <div class="meetup-card">
+          <aside class="display">
+              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image:url(./images/conference.jpg);"></div>
+          </aside>
+          <main class="info">
+            <div class="date-thumbnail">
+              <p class="month">JAN</p>
+              <p class="day grey-color">20</p>
+            </div>
+            <div class="details row flex-1">
+              <h3 class="title">
+                <a href="">
+                 International Conference  (ICMESS) 2019
+                </a>
+              </h3>
+              <div class="more grey-color">
+                <p class="detail-text" name="date">Mon, 14 - Tue, 15  10:00am</p>
+                <p class="detail-text" name="venue">Ikoyi, Lagos, Nigeria</p>
+              </div>
+            </div>
+          </main>
+				</div>
+				</a>
+      </div>
+			<div class="col-sm-12 col-md-6 col-lg-4 container" style="width: 30%;">
+				<a href="login.html">
+        <div class="meetup-card">
+          <aside class="display">
+              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(./images/conference2.jpg);"></div>
+          </aside>
+          <main class="info">
+            <div class="date-thumbnail">
+              <p class="month">JAN</p>
+              <p class="day grey-color">30</p>
+            </div>
+            <div class="details row flex-1">
+              <h3 class="title">
+                <a href="">
+                  West African International (WAIPEC), 2019
+                </a>
+              </h3>
+              <div class="more grey-color">
+                <p class="detail-text" name="date">Sat, Jul 20, 10:00am</p>
+                <p class="detail-text" name="venue"> Victoria Island, lagos</p>
+              </div>
+            </div>
+          </main>
+				</div>
+				</a>
+			</div>
+
+			</div>
 	<section class="section-container">
 	  <article class="section-article">
 	   <h3>Join Our Meetup</h3>
-	  <img src="images/meetup.jpg" width="550" height="350" alt="meetup" />
+	  <a href="login.html"><img src="images/meetup.jpg" width="550" height="350" alt="meetup" /></a>
 	 
 	  </article>
 	  <article class="section-article">
