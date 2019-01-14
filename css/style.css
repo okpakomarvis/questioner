@@ -9,25 +9,22 @@
 }
 body {
 	font-family: Helvetica, Arial," sans-serif";
-	background-color:#A3D4FC; 
+	background-color:#f4f6f9; 
 }
 .container{
 	max-width: 1300px;
 	margin-left:auto;
 	margin-right: auto;
+	overflow: hidden;
 }
 .header-page {
 	width: 100%;
-	max-height: 60px;
+	max-height: 80px;
 	padding: 5px;
 	position: relative;
 	background-color: #319FF9;
 	overflow: hidden;
-	border: 1px groove #304F68;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 6px;
-	-webkit-box-shadow: 3px 0px 0px 5px #304F68;
-	box-shadow: 3px 0px 0px 5px #304F68;
+	
 }
 #questioner{
 	float: left;
@@ -36,6 +33,7 @@ body {
 #questioner h1{
 	display: inline-block;
 	margin-top: 3px;
+	font-size: 38px;
 	margin-left: 40px;
 	text-shadow: 2px 1px 3px #304F68;
 	
@@ -55,18 +53,17 @@ body {
 .nav-bar ul {
 	list-style-type:none;
 	margin-right: 50px;
-	margin-top: 9px;
+	margin-top: 5px;
 	padding-top: 5px;
+	padding-bottom: 15px;
 }
 .nav-bar ul li {
 	display: inline-block;
-	border: 2px solid #304F68;
-	border-radius: 4px 2px 6px;
 	padding:6px;
 }
 .nav-bar ul li:hover{
 	background-color: #1D415F;
-	font-weight:600;
+	font-weight:500;
 }
 .target{
 	background-color: #1D415F;
@@ -87,8 +84,6 @@ text-decoration: none;
 	margin-top:0px;
 	margin-left:auto;
 	margin-right: auto;
-	height:730px;
-	
 }
 .image-container{
 	max-width: 100%;
@@ -121,12 +116,13 @@ text-decoration: none;
 }
 .container-work{
 	width:100%;
-	max-height: 500px;
 	margin-left:auto;
 	margin-right:auto;
 	text-align: center;
-	padding:15px 5px 5px 5px;
-		
+	margin-top:0; 
+	padding:0px 5px 5px 5px;
+	margin-bottom: 30px;
+	background-color: #edf4f9;
 }
 .container-wrapup{
 	max-height: 150px;
@@ -142,7 +138,7 @@ text-decoration: none;
 }
 .container-wrapup p{
 	width:300px;
-	color:aliceblue;
+	color:#8ac6f2;
 	text-align:left;
 	font-style: italic;
 	margin-left: auto;
@@ -159,6 +155,7 @@ text-decoration: none;
 	margin-right: 5px;
 	text-align: center;
 	vertical-align: middle;
+	overflow: hidden;
 	
 }
 .container-arran{
@@ -400,57 +397,60 @@ text-decoration: none;
 form.example input[type=text] {
 	padding: 10px;
 	font-size: 17px;
-	border: 1px solid grey;
+	border: 3px solid #319FF9;
 	float: left;
 	width: 80%;
 	background: #f1f1f1;
   }
   
   /* Style the submit button */
-  form.example a {
+  /*form.example button {
 	float: left;
 	width: 20%;
 	padding: 10px;
 	background: #2196F3;
 	color: white;
 	font-size: 17px;
-	border-left: none; /* Prevent double borders */
+	border: none;  Prevent double borders 
 	cursor: pointer;
   }
   
-  form.example a:hover {
+  form.example button:hover {
 	background: #0b7dda;
   }
   
-  /* Clear floats */
+  
   form.example::after {
 	content: "";
 	clear: both;
 	display: table;
-  }
+  }*/
+
  .upcoming-mt{
+ 	margin-top:6px;
+ 	margin-bottom: 6px;
 	 text-align:center;
 	 font-size: 30px;
 	 font-weight: 500;
-	 color:#ffffff;
+	 color:#90c8f4;
 	 font-style: italic;
 	 
  }
  #section-image{
-	 margin:2px;
 	 padding:0px;
 	 width:100%;
 	 height: 200px;
  }
  .back-image{
-	 background:url(../images/Meetups-Sydney-Startups.jpg);
+	 background:url(../images/wave-photography-dark-2.jpg);
 	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size: cover;
 	 width: 100%;
 	 height: 100%;
-	 background-size: cover;
  }
  #top-pt{
-		padding-top:0px;
+		padding-top:15px;
  }
  .back-image h2{
 	 text-align: center;
@@ -475,3 +475,148 @@ form.example input[type=text] {
 	 margin-right: auto;
 	 color: #F9F4F4;
  }
+ /****profile page******/
+ /* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left; 
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  font-size: 28px;
+  font-weight: 600;
+  color:#ffffff;
+  padding: 10px;
+}
+
+/* Add a card effect for articles */
+.cardd {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+.cardd p span {
+     color:#3B5998;
+}
+.cardd h3{
+	color:#3B5998;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.cardd h5{
+	margin-top:5px;
+	margin-bottom: 5px;
+	color: #3B5998;
+}
+.cardd div{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.cardd div p{
+	font-size: 18px;
+	margin-bottom: 20px;
+	padding-left:5%;
+	padding-right:5%;
+}
+.row2{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+}
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cardd p input{
+	margin-top: 7px;
+}
+.textin,input[type=tel] , textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+.submit{
+  background-color:#3B5998;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #1871ba;
+}
+
+/* Add a background color and some padding around the form */
+.containertb {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* Footer */
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}

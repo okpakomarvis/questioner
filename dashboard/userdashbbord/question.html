@@ -14,13 +14,42 @@
 
 <body>
 	<div class="content">
-		<div class="info">
-			<img src="../../images/blank2.jpg">
+		<header class="header-page" id="header">
+	  <div class="questioner-header" id="questioner">
+	  	<h1><span>Qu</span>estioner</h1>
+	  </div>
+	  <div class="questioner-header" id="questioner2">
+        <nav class="nav-bar" id="nav">
+       	  <ul>
+       		<li ><a href="profile.html">Profile</a></li>
+       		<li><a href="index.html">Meet up</a></li>
+			<li><a href="../../index.html">Logout</a></li>
+			</ul>
+        </nav>
+        <span class="slideshow"  onclick="openNav()">&#9776;</span>
+        
+		</div>
+
+      <!---- mobile menu---->
+        <div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="profile.html">Profile</a>
+		  <a href="index.html">Meet up</a>
+		  <a href="../../index.html">LogOut</a>
+	  </div>	
+</header>
+	<div class="info">
+			<img src="../../images/276381_276381_h_ergb_s_gl_F.jpg">
+			
 			<div class="ask-quest"> Ask Questions</div>
 			<div class="content-infomation">
 				<div class="left-side">
 					<div class="left-form">
-						<h2 style="color:darkgreen">Post Question(s)</h2>
+						<div class="ask-meetup">International Produced Water Confernce and Exhibition Africa (IPWCEA), 2019 <br>
+				<span>Tue, 22 - Thu, 24, 10:00am</span>
+					
+				</div>
+						<h2 style="color:#319FF9;">Post Question(s)</h2>
 						
 						<form>
 							<input type="text" name="" placeholder="Title">
@@ -28,12 +57,12 @@
 							<button>POST</button>
 						</form>
 
-						<h2 style="color:darkgreen">Recent Questions</h2>
+						<h2 style="color:#319FF9;">Recent Questions</h2>
 						
 						<div class="question">
 							<!--- test qeestions --->
 							<div id="items-container">
-									<div class="mail-row" data-id="1442384" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+									<div class="mail-row" data-id="1442384" data-num="0" data-type="4">
 										<div class="mail-col-check">
 											<div class="selected-bar"></div>
 											<input class="mail-check hidden" type="checkbox" />
@@ -63,7 +92,7 @@
 					
 								</div>
 							<div id="items-container">
-									<div class="mail-row" data-id="63955" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+									<div class="mail-row" data-id="63955" data-num="0" data-type="4" style="background-colorer: #319FF9;;">
 										<div class="mail-col-check">
 											<div class="selected-bar"></div>
 											<input class="mail-check hidden" type="checkbox" />
@@ -85,7 +114,7 @@
 					
 								</div>
 											<div id="items-container">
-									<div class="mail-row" data-id="3513569" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+									<div class="mail-row" data-id="3513569" data-num="0" data-type="4" style="background-colorer: #319FF9;">
 										<div class="mail-col-check">
 											<div class="selected-bar"></div>
 											<input class="mail-check hidden" type="checkbox" />
@@ -111,7 +140,7 @@
 					
 								</div>
 								<div id="items-container">
-									<div class="mail-row" data-id="1309602" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+									<div class="mail-row" data-id="1309602" data-num="0" data-type="4" style="background-colorer: #319FF9;">
 										<div class="mail-col-check">
 											<div class="selected-bar"></div>
 											<input class="mail-check hidden" type="checkbox" />
@@ -137,7 +166,7 @@
 					
 								</div>
 											<div id="items-container">
-									<div class="mail-row" data-id="3513768" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+									<div class="mail-row" data-id="3513768" data-num="0" data-type="4" style="background-colorer: #319FF9;">
 										<div class="mail-col-check">
 											<div class="selected-bar"></div>
 											<input class="mail-check hidden" type="checkbox" />
@@ -211,7 +240,7 @@
 				</div>
 
 				<div class="right-side">
-					<h4 style="color:darkgreen">Most Trending Questions</h4>
+					<h4 style="color:#319FF9;">Most Trending Questions</h4>
 					
 					<div class="qns-cont">
 						<div class="cont">
@@ -237,7 +266,7 @@
 					</div>
 
 
-					<h4 style="color:darkgreen">Most Voted Questions</h4>
+					<h4 style="color:#319FF9;">Most Voted Questions</h4>
 
 					<div class="qns-cont">
 						<div class="cont">
@@ -265,6 +294,7 @@
 				</div>
 			</div>
 		</div>
+
 	<script type="text/javascript"> 
 	 let comment = document.getElementsByClassName("comment");
 	 for(let i=0; i<comment.length; i++){
@@ -295,5 +325,6 @@
 		//x.classList.toggle("fa-thumbs-down");
 	  
 	  </script>
+
 </body>
 </html>

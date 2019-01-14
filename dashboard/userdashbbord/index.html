@@ -7,6 +7,8 @@
 <link rel="stylesheet" type="text/css" href="../../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../../css/login.css" />
 <link rel="stylesheet" type="text/css" href="../../css/font.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body style="background-color: #f4f6f7">
 <header class="header-page" id="header">
@@ -44,27 +46,41 @@
     </p> 
   </div>
 </section>
-<div id="top-pt" class="row all-meetups">
-      <div class="col-sm-12 col-md-6 col-lg-4 container">
+<!-- Load icon library -->
+
+<!-- The form -->
+<!-- <form class="example" action="">
+  <input type="text" placeholder="Search All Meetups" name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form> -->
+<div class="container-dashbt">
+  
+<div class="topnav">
+  <input type="text" placeholder=" All Meetups">
+  <a class="b active"  href="#home">Calender</a>
+  <a href="#about" class="c">Groups</a>
+  
+</div>
+<div id="outputmeet" class="display-mt">
+   <div id="top-pt" class="row all-meetups">
+      <div class="col-sm-12 col-md-6 col-lg-4 container showZoom">
         <div class="meetup-card">
           <aside class="display">
-           
-              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(../../images/conference1.jpg);"></div>     
-
-          </aside>
-          <a href="question.html" class="">
-          <main class="info">
-            <div class="date-thumbnail">
-                <div class="cta-btn">VIEW</div>
-              <p class="month">FEB</p>
-              <p class="day grey-color">20</p>
-            </div>
-            <div class="question-count">
+           <div class="question-count">
                 <span class="count">20</span>
                 <span>Questions</span>
               </div>
-            <div class="details row flex-1">
-              <h3 class="title">
+               <a href="question.html" class="">
+              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(../../images/conference1.jpg);"></div>     
+                <div class="date-thumbnail">
+                <div class="cta-btn">VIEW</div>
+              
+            </div>
+          </a>
+          </aside>
+          <main class="info">
+            <div class="details row flex-1" >
+              <h3 class="title" style="">
                 <a href="">
                   International Produced Water Confernce and Exhibition Africa (IPWCEA), 2019
                 </a>
@@ -75,26 +91,24 @@
               </div>
             </div>
           </main>
-        </a>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 container">
+      <div class="col-sm-12 col-md-6 col-lg-4 container showZoom">
         <div class="meetup-card">
-          <aside class="display">   
-              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image:url(../../images/conference.jpg);"></div>
-
-          </aside>
-          <a href="question.html" class="">
-          <main class="info">
-            <div class="date-thumbnail">
-              <p class="month">JAN</p>
-              <p class="day grey-color">20</p>
-              <div class="cta-btn">VIEW</div>
-            </div>
-            <div class="question-count">
+          <aside class="display">
+          <div class="question-count">
                 <span class="count">18</span>
                 <span>Questions</span>
-              </div>
+              </div>   
+              <a href="question.html" class="">
+              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image:url(../../images/conference.jpg);"></div>
+              <div class="date-thumbnail">
+              <div class="cta-btn">VIEW</div>
+            </div>
+          </a>
+            
+          </aside>
+          <main class="info">
             <div class="details row flex-1">
               <h3 class="title">
                 <a href="">
@@ -107,26 +121,23 @@
               </div>
             </div>
           </main>
-        </a>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 container">
+      <div class="col-sm-12 col-md-6 col-lg-4 container showZoom">
         <div class="meetup-card">
           <aside class="display">
-              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(../../images/conference2.jpg);"></div> 
-           
-          </aside>
-          <a href="question.html" class="">
-          <main class="info">
-            <div class="date-thumbnail">
-              <p class="month">JAN</p>
-              <p class="day grey-color">30</p>
-              <div class="cta-btn">VIEW</div>
-            </div>
-            <div class="question-count">
+             <div class="question-count">
                 <span class="count">10</span>
                 <span>Questions</span>
               </div>
+            <a href="question.html" class="">
+              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(../../images/conference2.jpg);"></div> 
+              <div class="date-thumbnail">
+              <div class="cta-btn">VIEW</div>
+            </div>
+            </a>
+          </aside>
+          <main class="info">
             <div class="details row flex-1">
               <h3 class="title">
                 <a href="">
@@ -139,27 +150,24 @@
               </div>
             </div>
           </main>
-        </a>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 container">
+      <div class="col-sm-12 col-md-6 col-lg-4 container showZoom">
         <div class="meetup-card">
           <aside class="display">
-             
-              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(../../images/conference3.jpg);"></div>
-             
-          </aside>
-          <a href="question.html" class=""></a>
-          <main class="info">
-            <div class="date-thumbnail">
-              <p class="month">MARCH</p>
-              <p class="day grey-color">15</p>
-              <div class="cta-btn">VIEW</div>
-            </div>
-            <div class="question-count">
+             <div class="question-count">
                 <span class="count">26</span>
                 <span>Questions</span>
               </div>
+              <a href="question.html" class="">
+              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(../../images/conference3.jpg);"></div>
+              <div class="date-thumbnail">
+              <div class="cta-btn">VIEW</div>
+            </div>
+          </a>
+          </aside>
+          
+          <main class="info">
             <div class="details row flex-1">
               <h3 class="title">
                 <a href="">
@@ -172,57 +180,53 @@
               </div>
             </div>
           </main>
-        </a>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 container">
+      <div class="col-sm-12 col-md-6 col-lg-4 container showZoom">
         <div class="meetup-card">
           <aside class="display">  
-              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(../../images/conference4.jpg);"></div>
-          </aside>
-          <a href="question.html" class="">
-          <main class="info">
-            <div class="date-thumbnail">
-              <p class="month">MAY</p>
-              <p class="day grey-color">23</p>
-              <div class="cta-btn">VIEW</div>
-            </div>
             <div class="question-count">
                 <span class="count">16</span>
                 <span>Questions</span>
               </div>
+              <a href="question.html" class="">
+              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(../../images/conference4.jpg);"></div>
+                <div class="date-thumbnail">
+              <div class="cta-btn">VIEW</div>
+            </div>
+          </a>
+          </aside>
+          
+          <main class="info">
             <div class="details row flex-1">
               <h3 class="title">
                 <a href="">
-                  
-					Social Protection Cross Learning Summit (SPECS) Conference, 2019
+                     Social Protection Cross Learning Summit (SPECS) Conference, 2019
                 </a>
               </h3>
               <div class="more grey-color">
                 <p class="detail-text" name="date">Sun, 27 - Wed, 30, 10:00am</p>
-                <p class="detail-text" name="venue">Plot 7/8 Agbeke Rotinwa Steet (off Hannat Balogun Str), Ikoyi, Lagos, Nigeria</p>
+                <p class="detail-text" name="venue">Plot 7/8, Rotinwa Steet (off Hannat Balogun Str), Ikoyi, Lagos</p>
               </div>
             </div>
           </main>
-        </a>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 container">
+      <div class="col-sm-12 col-md-6 col-lg-4 container showZoom">
         <div class="meetup-card">
           <aside class="display">
-              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(../../images/conference5.jpg);"></div>
-          </aside>
-          <a href="question.html" class="">
-          <main class="info">
-            <div class="date-thumbnail">
-              <p class="month">APRIL</p>
-              <p class="day grey-color">15</p>
-              <div class="cta-btn">VIEW</div>
-            </div>
             <div class="question-count">
                 <span class="count">30</span>
                 <span>Questions</span>
               </div>
+               <a href="question.html" class="">
+              <div class="with-back-img meetup-display-img" style="background-color: #b0e6ce; background-image: url(../../images/conference5.jpg);"></div>
+              <div class="date-thumbnail">
+              <div class="cta-btn">VIEW</div>
+            </div>
+          </a>
+          </aside>
+          <main class="info"> 
             <div class="details row flex-1">
               <h3 class="title">
                 <a href="">
@@ -235,10 +239,24 @@
               </div>
             </div>
           </main>
-        </a>
         </div>
       </div>
-    </div>
+</div>
+</div>
+<ul class="ul">
+  <li class="activity">All Meetups</li>
+  <li>Up Coming Meetups</li>
+  <li>My Questions</li>
+  <li>My Comments</li>
+</ul>
+<div class="date-btn">
+ <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=300&amp;wkst=1&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;ctz=Africa%2FLagos" style="border-width:0" width="200" height="300" frameborder="0" scrolling="no"></iframe>
+</div>
+  
+</div>
+
+
+
   
 <footer class="footer">
   <div class="footer-container">
