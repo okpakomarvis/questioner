@@ -5,10 +5,10 @@
 <title>Questioner | Login </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/login.css" />
+<link rel="stylesheet" type="text/css" href="css/modal.css" />
 <link rel="stylesheet" type="text/css" href="css/font.css" />
 </head>
-<body>
+<body style="background-image: url(./images/achv.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;">
  <header class="header-page" id="header">
 	  <div class="questioner-header" id="questioner">
 	  	<h1><span>Qu</span>estioner</h1>
@@ -19,7 +19,6 @@
        		<li ><a href="index.html" >Home</a></li>
        		<li ><a href="siginup.html">Signup</a></li>
        		<li class="target"><a href="login.html">Login</a></li>
-			<li><a href="#work">Get Stated</a></li>
 			</ul>
         </nav>
         <span class="slideshow"  onclick="openNav()">&#9776;</span>
@@ -32,10 +31,55 @@
 		  <a href="index.html">Home</a>
 		  <a href="siginup.html">Signup</a>
 		  <a href="login.html">Login</a>
-		  <a href="#work">Get Stated</a>
 	  </div>	
 </header>
-  <div class="content d-flex justify-content-center align-items-center">
+<div class="containerlogin">
+  <form action="">
+    <div class="row">
+      <h2 style="text-align:center;padding-bottom:15px;">Login with Social Media or Manually</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="email" class="text-input" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" class="text-input" required>
+        <a class="submit-btn" href="./dashboard/userdashbbord/index.html">Login</a>
+      </div>
+      
+    </div>
+  </form>
+  <div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="siginup.html" style="color:#319FF9;" class="btn">Sign up</a>
+    </div>
+    <div class="col" >
+      <a href="forget.html" style="color:#319FF9;" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+ <!--  <div class="content d-flex justify-content-center align-items-center">
       <div class="auth">
         <div class="card d-flex justify-content-center">
           <div class="w-90">
@@ -61,7 +105,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
  <footer class="footer">
   <div class="footer-container">
     <div><span>Qu</span>estioner</div>

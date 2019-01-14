@@ -78,7 +78,7 @@ div.content{
 }
 
 div.content div.info{
-	padding-top: 50px;
+	padding-top:0px;
 	width: 80%;
 }
 
@@ -120,7 +120,7 @@ div.content-infomation div.left-side form input{
 	width: 97%;
 	padding: 10px 5px;
 	border-radius: 5px;
-	border: 1px solid #3e8e41;
+	border: 1px solid #1871ba;
 	margin-bottom: 15px;
 }
 
@@ -129,15 +129,15 @@ div.content-infomation div.left-side form textarea{
 	border-radius: 5px;
 	height: 200px;
 	padding: 10px 5px;
-	border: 1px solid #3e8e41;
+	border: 1px solid #1871ba;
 }
 
 div.content-infomation div.left-side form button{
 	margin-top: 10px;
 	padding: 8px 10px;
 	border-radius: 10px;
-	border: 1px solid #3e8e41;
-	background-color: #3f2d46;
+	border: 1px solid :#1871ba;
+	background-color: #319FF9;
 	color: white;
 	margin-bottom: 10px;
 }
@@ -154,13 +154,13 @@ div.content-infomation div.left-side div.question a{
 
 div.content-infomation div.left-side div.question a:hover{
 	text-decoration: none;
-	color: blue;
+	color: #1871ba;
 }
 
 div.qns{
 	margin-bottom:15px;
 	padding-bottom: 15px;
-	border-bottom: 1px solid silver;
+	border-bottom: 1px solid #1871ba;
 	padding-right: 15px;
 }
 
@@ -218,7 +218,7 @@ div.answer-container{
 
 div.answer-container div.ans{
 	padding: 10px;
-	border-bottom: 1px solid silver;
+	border-bottom: 1px solid #1871ba;
 }
 
 div.answer-container div.ans h3{
@@ -294,4 +294,8 @@ div.answer-container div.ans p{
 	
 }
 
+}
+.ask-meetup{
+	font-size:20px;
+	padding-bottom:6px; 
 }
