@@ -43,6 +43,7 @@ router.get("/meetups/upcoming/", _authen2.default.authen, _users2.default.upcomi
 router.get("/meetups/:meetup_id", _authen2.default.authen, _users2.default.singleMeetup);
 router.delete("/meetups/:meetup_id", _authen2.default.authen, _authen2.default.authenAdmin, _users2.default.deleteMeetup);
 router.post("/questions", _authen2.default.authen, _users2.default.createQuestion);
+router.post("/comments/", _users2.default.comment);
 router.patch("/questions/:question_id/upvote", _authen2.default.authen, _users2.default.upvote);
 router.patch("/questions/:question_id/downvote", _authen2.default.authen, _users2.default.downVote);
 router.post("/meetups/:meetup_id/rsvp", _authen2.default.authen, _authen2.default.authenUser, _users2.default.createRvsp);

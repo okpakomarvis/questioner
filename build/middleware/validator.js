@@ -24,7 +24,6 @@ exports.default = {
 		tags: _joi2.default.string().trim().max(20).required()
 	},
 	questions: {
-		createdBy: _joi2.default.number().required(),
 		meetup: _joi2.default.number().required(),
 		title: _joi2.default.string().trim().max(30).required(),
 		body: _joi2.default.string().trim().max(50).required()
@@ -43,6 +42,10 @@ exports.default = {
 	login: {
 		email: _joi2.default.string().trim().required(),
 		password: _joi2.default.string().trim().required()
+	},
+	comment: {
+		question: _joi2.default.number().required(),
+		comment: _joi2.default.string().trim().max(200).required()
 	}
 
 };

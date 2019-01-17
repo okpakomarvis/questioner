@@ -171,13 +171,13 @@ exports.default = {
 			return res.status(400).send(result.error.details[0].message);
 		}
 		var _req$body2 = req.body,
-		    createdBy = _req$body2.createdBy,
 		    meetup = _req$body2.meetup,
 		    title = _req$body2.title,
 		    body = _req$body2.body;
+		var userId = req.userData.userId;
 
 		var queryQst = 'INSERT INTO questions(createdon, createdby, meetup, title, body, vote)' + ' VALUES($1, $2, $3, $4, $5, $6) RETURNING *';
-		var queryValue = [new Date().toISOString(), parseInt(createdBy), parseInt(meetup), title, body, 0];
+		var queryValue = [new Date().toISOString(), parseInt(userId), parseInt(meetup), title, body, 0];
 		_connect2.default.query(queryQst, queryValue).then(function (data) {
 			if (data.rowCount < 1) {
 				return res.json({
@@ -204,6 +204,63 @@ exports.default = {
 			}
 		});
 	},
+
+	comment: function comment(req, res) {
+		var result = _joi2.default.validate(req.body, _validator2.default.comment);
+		if (result.error) {
+			return res.status(400).send(result.error.details[0].message);
+		}
+		console.log(req.body.question);
+		_connect2.default.query("SELECT * FROM questions where question_id = $1", [req.body.question]).then(function (result) {
+			console.log(result.rows[0]);
+			if (result.rowCount < 1) {
+				return res.json({
+					status: 404,
+					error: "Question  Doesn't exist"
+				});
+			}
+			_connect2.default.query("INSERT INTO comments(questions, comment) VALUES($1, $2) RETURNING *", [req.body.question, req.body.comment]).then(function (data) {
+				if (data.rowCount < 1) {
+					return res.json({
+						status: 503,
+						error: "Something Went Wrong"
+					});
+				}
+				var returnResult = {
+					id: data.rows[0].comment_id,
+					question: result.rows[0].question_id,
+					title: result.rows[0].title,
+					body: result.rows[0].body,
+					comment: data.rows[0].comment
+				};
+				return res.json({
+					status: 201,
+					data: returnResult,
+					message: " Comment Successfully Created "
+				});
+			}).catch(function (e) {
+				if (e.name === 'error') {
+					return res.json({
+						status: 500,
+						error: "Internal Server Error Occurred"
+					});
+				}
+			});
+		}).catch(function (e) {
+			if (e.code === '22P02') {
+				return res.json({
+					status: 400,
+					error: "Characters are not Allowed"
+				});
+			} else if (e.name === 'error') {
+				res.json({
+					status: 500,
+					error: "Internal Server Error Occurred"
+				});
+			}
+		});
+	},
+
 	upvote: function upvote(req, res) {
 		var queryvt = 'update questions set vote = vote + $1 where question_id = $2 RETURNING *';
 		var queryValue = [1, parseInt(req.params.question_id)];
@@ -361,7 +418,3 @@ exports.default = {
 	}
 
 };
-/* client.query(query)
-  .then(res => console.log(res.rows[0]))
-  .catch(e => console.error(e.stack))
-  */

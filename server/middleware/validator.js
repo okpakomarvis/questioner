@@ -14,7 +14,6 @@ export default {
 		tags:Joi.string().trim().max(20).required()
 	},
 	questions:{
-		createdBy:Joi.number().required(),
 		meetup: Joi.number().required(),
 		title: Joi.string().trim().max(30).required(),
 		body: Joi.string().trim().max(50).required()
@@ -33,6 +32,10 @@ export default {
 	login:{
 		email: Joi.string().trim().required(),
 		password:Joi.string().trim().required()
+	},
+	comment:{
+		question:Joi.number().required(),
+		comment: Joi.string().trim().max(200).required()
 	}
 
 };

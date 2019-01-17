@@ -14,6 +14,7 @@ router.get("/meetups/upcoming/", check.authen, user.upcomingMeetup);
 router.get("/meetups/:meetup_id", check.authen, user.singleMeetup);
 router.delete("/meetups/:meetup_id", check.authen,check.authenAdmin, user.deleteMeetup);
 router.post("/questions", check.authen, user.createQuestion);
+router.post("/comments/", user.comment);
 router.patch("/questions/:question_id/upvote", check.authen, user.upvote);
 router.patch("/questions/:question_id/downvote", check.authen, user.downVote);
 router.post("/meetups/:meetup_id/rsvp",  check.authen, check.authenUser, user.createRvsp); 

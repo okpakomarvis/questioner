@@ -167,10 +167,11 @@ export default {
 		if(result.error){
 			return	res.status(400).send(result.error.details[0].message);
 		} 
-		const { createdBy, meetup, title, body} = req.body;
+		const { meetup, title, body} = req.body;
+		const {userId} = req.userData;
 		const queryQst ='INSERT INTO questions(createdon, createdby, meetup, title, body, vote)'+
 						' VALUES($1, $2, $3, $4, $5, $6) RETURNING *' ;
-		const queryValue = [ new Date().toISOString(), parseInt(createdBy), parseInt(meetup), title, body, 0];
+		const queryValue = [ new Date().toISOString(), parseInt(userId), parseInt(meetup), title, body, 0];
 		db.query(queryQst, queryValue)
 			.then(data =>{
 				if(data.rowCount < 1){
@@ -201,6 +202,70 @@ export default {
 				}
 			});
 	},
+
+	comment:(req, res) =>{
+		const result = Joi.validate(req.body, validat.comment);
+		if(result.error){
+			return	res.status(400).send(result.error.details[0].message);
+		} 
+	    console.log(req.body.question);
+		db.query("SELECT * FROM questions where question_id = $1", [req.body.question])
+			.then(result=>{
+				console.log(result.rows[0]);
+				if(result.rowCount <1){
+					return res.json({
+						status:404,
+						error: "Question  Doesn't exist"
+					});
+				}
+				db.query("INSERT INTO comments(questions, comment) VALUES($1, $2) RETURNING *",
+					[req.body.question, req.body.comment])
+					.then(data=>{
+						if(data.rowCount <1){
+							return res.json({
+								status: 503,
+								error: "Something Went Wrong"
+							});
+						}
+						const returnResult ={
+							id: data.rows[0].comment_id,
+							question: result.rows[0].question_id,
+							title: result.rows[0].title,
+							body : result.rows[0].body,
+							comment: data.rows[0].comment,
+						};
+						return res.json({
+							status:201,
+							data: returnResult,
+							message: " Comment Successfully Created "
+						});
+					})
+					.catch(e=>{
+						if(e.name === 'error'){
+							return res.json({
+								status: 500,
+								error: "Internal Server Error Occurred"
+							});
+						}
+					});	
+			})
+			.catch(e=>{
+				if(e.code === '22P02'){
+					return res.json({
+						status: 400,
+						error: "Characters are not Allowed"
+					});
+					
+				}else if(e.name === 'error'){
+					res.json({
+						status: 500,
+						error: "Internal Server Error Occurred"
+					});
+					
+				}
+			});
+	},
+
 	upvote:(req, res) => {
 		const queryvt = 'update questions set vote = vote + $1 where question_id = $2 RETURNING *';
 		const queryValue = [ 1 , parseInt(req.params.question_id)] ;
@@ -379,7 +444,3 @@ export default {
 	}
 
 };
-/* client.query(query)
-  .then(res => console.log(res.rows[0]))
-  .catch(e => console.error(e.stack))
-  */
