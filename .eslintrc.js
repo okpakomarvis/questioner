@@ -26,6 +26,8 @@ module.exports = {
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "max-len": [1,120,2]
+
     }
 };
