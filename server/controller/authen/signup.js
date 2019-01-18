@@ -65,7 +65,6 @@ const createUsers = (req, res) => {
         }
       })
       .catch(e => {
-        console.log(e);
         if (e.name === "error") {
           res.json({
             status: 500,

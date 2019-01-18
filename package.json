@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "babel server -d build --watch",
-    "start": "node build/app.js",
+    "start": "npm run tables && node build/app.js",
     "start:dev": "nodemon build/app.js",
     "test": " mocha build/test/  --timeout 10000",
     "tables": "babel-node server/db/droptables && babel-node server/db/createtables"
