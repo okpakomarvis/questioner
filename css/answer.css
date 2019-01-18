@@ -299,3 +299,19 @@ div.answer-container div.ans p{
 	font-size:20px;
 	padding-bottom:6px; 
 }
+
+.rsvp{
+	width:250px;
+	height:140px;
+	padding:10px;
+	margin-bottom:20px;
+	overflow:hidden;
+	border: 1px solid #1871ba;
+}
+.btnB{
+	margin-top:20px;
+	margin-left:2%;
+	margin-right:2%;
+	padding:15px;
+	margin-bottom:5px;
+}

@@ -240,6 +240,11 @@
 				</div>
 
 				<div class="right-side">
+				     <div class="rsvp">
+						<div class="titleme"><p>Do You Want To Join This Meetup?</p></div>
+						<button class= "btnB">Yes</button> <button class= "btnB">No</button> <button class= "btnB">Maybe</button>
+					 </div>
+
 					<h4 style="color:#319FF9;">Most Trending Questions</h4>
 					
 					<div class="qns-cont">
@@ -296,6 +301,10 @@
 		</div>
 
 	<script type="text/javascript"> 
+		function myFunction() {
+	  var popup = document.getElementById("myPopup");
+	  popup.classList.toggle("show");
+	}
 	 let comment = document.getElementsByClassName("comment");
 	 for(let i=0; i<comment.length; i++){
 		 comment[i].addEventListener('click', function(){
