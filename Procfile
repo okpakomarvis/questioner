@@ -1,1 +1,1 @@
-web:  npm run tables && node build/app.js
+web:  npm start build/app.js
