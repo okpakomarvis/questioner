@@ -5,15 +5,15 @@ dotenv.config();
 
 const { User, Database, Password, DBPort } = process.env;
 const connectionString =
-  "postgres://" +
-  User +
-  ":" +
-  Password +
-  "@localhost:" +
-  DBPort +
-  "/" +
-  Database +
-  "";
+ " postgres://eyyjuvsm:xaldVsNFMdVZAo4yGXY62IC6flByTs65@stampy.db.elephantsql.com:5432/rugby";
+
+ 
+
+  
+  
+  
+ 
+
 const pool = new Pool({
   connectionString: connectionString
 });
