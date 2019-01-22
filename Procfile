@@ -1,1 +1,1 @@
-web: build/app.js
+web: npm start build/app.js
